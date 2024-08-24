@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js"></script>
+    <title>Landing Page</title>
+</head>
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --preto: #07070A;
+    --azul-escuro: #004BA8;
+    --azul-claro: #3E78B2;
+    --cinza-escuro: #24272B;
+    --cinza-claro: #4A525A;
+    --branco: #f1f1f1;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 1000px;
+    padding: 50px;
+    font-family: "Open Sans", sans-serif;
+    color: var(--branco);
+    background-color: var(--cinza-escuro);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    position: fixed;
+    height: 130px;
+    width: 100%; 
+    top: 0;
+    left: 0; /* Certifica que o header está alinhado à esquerda */
+    right: 0; /* Certifica que o header está alinhado à direita */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo de largura*/
+    border: 0px solid var(--azul-escuro);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--azul-escuro);
+    background: linear-gradient(to bottom, var(--azul-escuro) 70%, rgb(0,0,0,0) 100%);
+}
+
+#tittle{
+    margin-left: 50px;
+    text-shadow: 7px 7px 4px var(--preto);
+}
+
+li{
+    display: inline-block;
+    margin: 1.5rem;
+    font-weight: bold;
+}
+
+a{
+    padding: 10px;
+    border: 0px solid;
+    border-radius: 15px;
+    transition: background-color 0.5s ease;
+    color: var(--branco);
+}
+
+a:hover{
+    transition: background-color 0.5s ease;
+    transition: border-width 0.5s ease;
+    color: var(--azul-escuro);
+    border-color: var(--branco);
+    background-color: var(--branco);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px; /* Espaço para o cabeçalho fixo */
+    padding: 20px;
+}
+
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold 500;
+    font-size: 70px;
+    line-height: 0.313rem;
+}
+
+p{
+    max-width: 500px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}
+
+span{
+    color: var(--azul-escuro);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{
+    width: 70%;
+    font-weight: bold;
+    color: var(--branco);
+    background-color: var(--azul-escuro);
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+    transform: scale(1.025);
+    background-color: var(--azul-claro);
+}
+
+form [type="submit"]:active{
+    transform: scale(1.05);
+}
+
+input{
+    padding: 0.938rem;
+    margin-top: 0.625rem;
+    border: none;
+    border-radius: 0.938rem;
+    font-size: 15px;
+}
+
+img{
+    width: 500px;
+    border-radius: 50%;
+}
+  </style>
+    <header>
+        <div id="tittle">
+            <h1>Site Teste</h1>
+        </div>
+
+        <ul>
+            <a href="#"><li>Início</li></a>
+            <a href="#"><li>Serviços</li></a>
+            <a href="#"><li>Contato</li></a>
+            <a href="#"><li>Sobre</li></a>
+            <a href="#"><li>Já tem uma conta?</li></a>
+        </ul>
+    </header>
+
+    <main>
+        <aside>
+            <h2><span>Inscreva-se</span></h2>
+            <h2>no site</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta esse repudiandae, architecto ea eum praesentium quos, illum accusantium tempora a error, aliquam reprehenderit dolorum voluptate nihil ipsa dolor? Quasi, cupiditate.</p>
+            
+            <form>
+                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Email">
+                <input type="submit" value="Enviar >">
+            </form>
+        </aside>
+        
+        <article>
+            <img src="./components/images/chorronarigao.jpeg" alt="chorro-narigudo">
+        </article>
+    </main>
+</body>
+</html>
