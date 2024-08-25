@@ -1,0 +1,61 @@
+@media screen and (max-width: 1047px){
+
+    /* body{
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         grid-template-rows: repeat(2, 100px);
+         gap: 10px;
+     } */
+     
+     header{
+         flex-direction: column;
+         align-items: center;
+     }
+ 
+     ul{
+         text-align: center;
+         margin: 0 auto;
+     }
+ 
+     li{
+         margin: 0 auto;
+         display: inline-block;        
+     }
+ 
+     a{
+         padding: 0 auto;
+     }
+ 
+     #tittle{
+         margin: 0 auto;
+     }
+ 
+     main{
+         flex-direction: column;
+         align-items: center;
+     }
+ 
+     h2{
+         margin-bottom: 50px;
+         font-size: 40px;
+         text-align: center;
+     }
+ 
+     p{
+         text-align: center;
+     }
+ 
+     form{
+         margin: 0 auto;
+     }
+ 
+     #botao{
+         align-self: center;
+     }
+ 
+     img{
+         width: 100%;
+         margin-top: 30px;
+     }
+ }
+ 
