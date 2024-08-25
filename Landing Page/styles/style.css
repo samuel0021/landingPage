@@ -32,9 +32,9 @@ header{
     height: 130px;
     width: 100%; 
     top: 0;
-    left: 0; /* Certifica que o header está alinhado à esquerda */
-    right: 0; /* Certifica que o header está alinhado à direita */
-    box-sizing: border-box; /* Inclui padding e bordas no cálculo de largura*/
+    left: 0; 
+    right: 0;
+    box-sizing: border-box; 
     border: 0px solid var(--azul-escuro);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
