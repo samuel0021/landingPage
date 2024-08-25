@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles/style.css" rel="stylesheet">
-    <script src="./main.js"></script>
+    <link href="./styles/media.css" rel="stylesheet">
     <title>Landing Page</title>
 </head>
 <body>
@@ -12,33 +12,37 @@
         <div id="tittle">
             <h1>Site Teste</h1>
         </div>
-
+        
         <ul>
             <a href="#"><li>Início</li></a>
             <a href="#"><li>Serviços</li></a>
-            <a href="#"><li>Contato</li></a>
-            <a href="#"><li>Sobre</li></a>
-            <a href="#"><li>Já tem uma conta?</li></a>
         </ul>
     </header>
-
+    
     <main>
         <aside>
-            <h2><span>Inscreva-se</span></h2>
+            <h2><span>Inscreva-se</span> agora</h2>
             <h2>no site</h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta esse repudiandae, architecto ea eum praesentium quos, illum accusantium tempora a error, aliquam reprehenderit dolorum voluptate nihil ipsa dolor? Quasi, cupiditate.</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Dicta esse repudiandae, architecto ea eum 
+                praesentium quos, illum accusantium tempora a error, 
+                aliquam reprehenderit dolorum voluptate nihil ipsa dolor?
+                Quasi, cupiditate.</p>
             
             <form>
                 <input type="text" placeholder="Nome">
                 <input type="text" placeholder="Email">
-                <input type="submit" value="Enviar >">
+                <input type="submit" id="botao" value="Enviar >">
             </form>
         </aside>
+        
+        <label id="lblLargura" onclick="largura()">teste</label>
         
         <article>
             <img src="./components/images/chorronarigao.jpeg" alt="chorro-narigudo">
         </article>
     </main>
+    <script src="./main.js"></script>
 </body>
 </html>
