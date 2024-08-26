@@ -7,8 +7,10 @@
 
 function largura() {
     let label = document.getElementById('lblLargura');
-    let larguraInterna = window.innerWidth;
-    label.innerText = larguraInterna + 'px';
+    let largura = window.innerWidth;
+    let altura = window.innerHeight;
+    
+    label.innerText = largura + ' x ' + altura;
 }
 
 // largura();
