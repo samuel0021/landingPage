@@ -129,3 +129,12 @@ img{
     width: 500px;
     border-radius: 50%;
 }
+
+img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+img:active{
+  transform: scale(1.025);
+}
